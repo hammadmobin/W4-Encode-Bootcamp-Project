@@ -1,1 +1,63 @@
+//metadata file for 10 NFTs
 
+{
+  "1": {
+    "name": "Summer photo1",
+    "description": "SeaStar",
+    "image_path": "ipfs://QmQ6FBgYEeKNRSLd3Tfx4ficm4XwShp5GAUozHK8LFHf4y/summer-photo1.jpeg"
+  },
+
+  "2": {
+    "name": "Summer photo2",
+    "description": "Umbrella",
+    "image_path": "ipfs://QmaHxsM1r5BURHzarCziaNZRganpRmGeiHK1e2q1aLP4Gs/summer-photo2.jpeg"
+  },
+
+  "3": {
+    "name": "Summer photo3",
+    "description": "Adults",
+    "image_path": "ipfs://QmX4e2fnEqfYd2mm2s5iRJy4wVSs1mnBjoPLD9SZMmBhJJ/summer-photo3.jpeg"
+  },
+
+  "4": {
+    "name": "Summer photo4",
+    "description": "Kids",
+    "image_path": "ipfs://QmQEeupiP27cUBTpbD6ngstciomDy7imbKKwgv158QUjFb/summer-photo4.jpeg"
+  },
+
+  "5": {
+    "name": "Summer photo5",
+    "description": "Pool",
+    "image_path": "ipfs://Qmaqhi8m1sLAeHnuVV1wWyuZFRB7gSskQ2zGFWhFY59Fo8/summer-photo5.jpeg"
+  },
+
+  "6": {
+    "name": "Summer photo6",
+    "description": "Hat",
+    "image_path": "ipfs://QmcmvQajeNTEdqC9JShTjUfwCvuVUoeJ2oPsEkeYDvW1Gq/summer-photo6.jpeg"
+  },
+
+  "7": {
+    "name": "Summer photo7",
+    "description": "SunScreen",
+    "image_path": "ipfs://QmewHbwfPkjCzVNPrFi3EwGbag2eXZmUoYYTE7Xq3J8SHC/summer-photo7.jpeg"
+  },
+
+  "8": {
+    "name": "Summer photo8",
+    "description": "Trees",
+    "image_path": "ipfs://QmTSKUFYoGtYq9mtaFmW2aQBqCAdNTNmg2yuV2yZAFRSPd/summer-photo8.jpeg"
+  },
+
+  "9": {
+    "name": "Summer photo9",
+    "description": "Sea",
+    "image_path": "ipfs://QmQ9yyviiHqS2XhbbJNVY3uCJitgre35SnNU5vANaZGxc1/summer-photo9.jpeg"
+  },
+
+  "10": {
+    "name": "Summer photo10",
+    "description": "Waves",
+    "image_path": "ipfs://QmNtGLKLw4TdVCdGttZrjwfcD5VrZh4Hhte2Bh4JiK31t4/summer-photo10.jpeg"
+  }
+}
