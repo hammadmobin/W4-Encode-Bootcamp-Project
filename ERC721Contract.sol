@@ -39,7 +39,8 @@ contract SummerNFT is
 }
 
 
-// Based on this:    we need to implement these functions: https://docs.openzeppelin.com/contracts/4.x/api/token/erc721#ERC721URIStorage 
+// Based on this: https://docs.openzeppelin.com/contracts/4.x/api/token/erc721#ERC721URIStorage 
+we need to implement these functions: 
 
 // tokenURI(tokenId)
 // _setTokenURI(tokenId, _tokenURI)
