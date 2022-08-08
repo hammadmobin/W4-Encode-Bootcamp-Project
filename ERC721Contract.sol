@@ -6,10 +6,10 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol"; //Calling the other contract in this one
 import "@openzeppelin/contracts/access/AccessControl.sol";
 
-contract MyNFT is ERC721, AccessControl, ERC721Burnable {
+contract SummerNFT is ERC721, AccessControl, ERC721Burnable, ERC721URIStorage { //renamed contract and feature ERC721URIStorage
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
 
-    constructor() ERC721("MyToken", "MTK") {
+    constructor() ERC721("SummerToken", "ST") {
         _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
         _grantRole(MINTER_ROLE, msg.sender);
     }
