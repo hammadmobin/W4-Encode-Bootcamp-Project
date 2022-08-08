@@ -6,7 +6,15 @@ import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Burnable.sol";
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol"; //Calling the other contract in this one
 import "@openzeppelin/contracts/access/AccessControl.sol";
 
-contract SummerNFT is ERC721, AccessControl, ERC721Burnable, ERC721URIStorage { //renamed contract and feature ERC721URIStorage
+//renamed contract and added feature ERC721URIStorage
+
+contract SummerNFT is 
+    ERC721, 
+    AccessControl, 
+    ERC721Burnable, 
+    ERC721URIStorage 
+    
+    { 
     bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
 
     constructor() ERC721("SummerToken", "ST") {
