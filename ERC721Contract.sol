@@ -22,8 +22,8 @@ contract SummerNFT is
         _grantRole(MINTER_ROLE, msg.sender);
     }
 
-    function safeMint(address to, uint256 tokenId) public onlyRole(MINTER_ROLE) {
-        _safeMint(to, tokenId);
+    function safeMint(address to, string memory uri, uint256 tokenId) public onlyRole(MINTER_ROLE) {
+        _safeMint(to, uri, tokenId);
     }
 
     // The following functions are overrides required by Solidity.
