@@ -23,7 +23,8 @@ contract SummerNFT is
     }
 
     function safeMint(address to, string memory uri, uint256 tokenId) public onlyRole(MINTER_ROLE) {
-        _safeMint(to, uri, tokenId);
+        _safeMint(to, tokenId);
+        _setTokenURI(tokenId, uri);
     }
 
     // The following functions are overrides required by Solidity.
@@ -36,8 +37,12 @@ contract SummerNFT is
     {
         return super.supportsInterface(interfaceId);
     }
+    function tokenURI(tokenId)
+        public
+        view
+        override(ERC721, ERC721URIStorage)
+        returns (string)
 }
-
 
 // Based on this: https://docs.openzeppelin.com/contracts/4.x/api/token/erc721#ERC721URIStorage 
 we need to implement these functions: 
