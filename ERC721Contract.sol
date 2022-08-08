@@ -37,3 +37,10 @@ contract SummerNFT is
         return super.supportsInterface(interfaceId);
     }
 }
+
+
+// Based on this:    we need to implement these functions: https://docs.openzeppelin.com/contracts/4.x/api/token/erc721#ERC721URIStorage 
+
+// tokenURI(tokenId)
+// _setTokenURI(tokenId, _tokenURI)
+// _burn(tokenId)
