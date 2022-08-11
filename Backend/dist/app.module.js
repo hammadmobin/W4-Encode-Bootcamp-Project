@@ -8,17 +8,25 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
-const platform_express_1 = require("@nestjs/platform-express");
+const config_1 = require("@nestjs/config");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
+const shared_module_1 = require("./shared/shared.module");
+const block_module_1 = require("./block/block.module");
+const account_module_1 = require("./account/account.module");
+const wallet_module_1 = require("./wallet/wallet.module");
+const contract_module_1 = require("./contract/contract.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     (0, common_1.Module)({
         imports: [
-            platform_express_1.MulterModule.register({
-                dest: '../upload',
-            }),
+            config_1.ConfigModule.forRoot(),
+            shared_module_1.SharedModule,
+            block_module_1.BlockModule,
+            account_module_1.AccountModule,
+            wallet_module_1.WalletModule,
+            contract_module_1.ContractModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],

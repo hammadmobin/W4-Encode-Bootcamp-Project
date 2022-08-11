@@ -5,9 +5,9 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create(AppModule, { cors: true });
   const swaggerOptions = new DocumentBuilder()
-    .setTitle('Lesson 16 Project')
+    .setTitle('Lesson 13 Project')
     .setVersion('1.0.0')
-    .setDescription('Encode Club Bootcamp July Project for Lesson 16')
+    .setDescription('Encode Club Bootcamp July Project for Lesson 13')
     .build();
   const document = SwaggerModule.createDocument(app, swaggerOptions);
   SwaggerModule.setup('docs', app, document);
