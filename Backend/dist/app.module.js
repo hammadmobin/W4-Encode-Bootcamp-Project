@@ -16,6 +16,8 @@ const block_module_1 = require("./block/block.module");
 const account_module_1 = require("./account/account.module");
 const wallet_module_1 = require("./wallet/wallet.module");
 const contract_module_1 = require("./contract/contract.module");
+const platform_express_1 = require("@nestjs/platform-express");
+const ipfs_module_1 = require("./ipfs/ipfs.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -27,6 +29,10 @@ AppModule = __decorate([
             account_module_1.AccountModule,
             wallet_module_1.WalletModule,
             contract_module_1.ContractModule,
+            platform_express_1.MulterModule.register({
+                dest: '../upload',
+            }),
+            ipfs_module_1.IpfsModule,
         ],
         controllers: [app_controller_1.AppController],
         providers: [app_service_1.AppService],
