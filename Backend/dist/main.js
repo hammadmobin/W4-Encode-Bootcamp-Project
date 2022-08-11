@@ -8,7 +8,7 @@ async function bootstrap() {
     const swaggerOptions = new swagger_1.DocumentBuilder()
         .setTitle('Lesson 13 Project')
         .setVersion('1.0.0')
-        .setDescription('Encode Club Bootcamp July Project for Lesson 13')
+        .setDescription('NFT MarketPlace')
         .build();
     const document = swagger_1.SwaggerModule.createDocument(app, swaggerOptions);
     swagger_1.SwaggerModule.setup('docs', app, document);
