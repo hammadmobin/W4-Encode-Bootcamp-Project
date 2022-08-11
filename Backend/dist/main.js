@@ -6,9 +6,9 @@ const app_module_1 = require("./app.module");
 async function bootstrap() {
     const app = await core_1.NestFactory.create(app_module_1.AppModule, { cors: true });
     const swaggerOptions = new swagger_1.DocumentBuilder()
-        .setTitle('Lesson 16 Project')
+        .setTitle('Lesson 13 Project')
         .setVersion('1.0.0')
-        .setDescription('Encode Club Bootcamp July Project for Lesson 16')
+        .setDescription('Encode Club Bootcamp July Project for Lesson 13')
         .build();
     const document = swagger_1.SwaggerModule.createDocument(app, swaggerOptions);
     swagger_1.SwaggerModule.setup('docs', app, document);
