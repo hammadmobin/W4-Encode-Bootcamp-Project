@@ -42,6 +42,12 @@ export class BlockchainService {
     return networkName;
   }
 
+  async GetNFTS(tokenId: string) {
+      const tokenUri = await this.tokenContractInstance['tokenURI'](tokenId);
+      return tokenUri;
+  }
+
+
   async number() {
     const number = await this.provider.getBlockNumber();
     return number.toFixed(0);
