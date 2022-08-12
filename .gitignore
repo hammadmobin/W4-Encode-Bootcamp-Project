@@ -1,6 +1,7 @@
 ## Project Server emulation folders
 /upload
 /db
+/db
 
 node_modules
 .env
