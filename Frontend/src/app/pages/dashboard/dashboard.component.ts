@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Contract } from 'ethers';
 import { ApiService } from 'src/app/services/api.service';
 import { BlockchainService } from 'src/app/services/blockchain.service';
 
@@ -38,15 +39,16 @@ export class DashboardComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.pageContents = this.INITIAL_CONTENTS;
-    this.updateValues();
-    this.updateVariables();
-    this.watchBlockNumber();
-    this.watchUserBalanceEther();
-    this.watchContractSupply();
-    this.watchUserBalanceToken();
-    this.watchServerBlock();
-    this.watchPendingRequests();
+   // this.pageContents = this.INITIAL_CONTENTS;
+    this.DisplayNFT()
+    // this.updateValues();
+    // this.updateVariables();
+    // this.watchBlockNumber();
+    // this.watchUserBalanceEther();
+    // this.watchContractSupply();
+    // this.watchUserBalanceToken();
+    // this.watchServerBlock();
+    // this.watchPendingRequests();
   }
 
   private updateValues() {
@@ -104,6 +106,12 @@ export class DashboardComponent implements OnInit {
     this.blockchainService.watchUserBalanceToken(() => {
       this.updateTokenBalance();
     });
+  }
+
+  private DisplayNFT()
+  {
+    for( let id = 1; id<10; id++ )
+     this.blockchainService.GetNFTS(`token/${id}`);
   }
 
   private updateEtherBalance() {
